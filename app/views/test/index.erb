@@ -1,0 +1,8 @@
+<% @posts.each do |post| %> 제목 : <%= post.title %>
+<a href="/show/<%=post.id %>">article 보기</a>
+<a href="/edit/<%=post.id %>">article 수정</a> <br />
+내용 : <%= post.content %> <a href="/delete/<%=post.id %>">article 삭제</a>
+<hr />
+<% end %>
+
+<a href="/new">new article</a>
